@@ -130,7 +130,11 @@ int main(int argc, const char * argv[]) {
             NSLog(@"person persisted to realm: %@", area);
         }
         
+        NSError *error2 = nil;
         
+        BOOL result = [realm writeCopyToPath:@"/Users/shiratsu/default.realm" error:&error2];
+        NSLog(@"%@", error2);
+        NSLog(@"%d", result);
         
         
     }
