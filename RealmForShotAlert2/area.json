@@ -1,0 +1,135 @@
+[
+ {
+ 	"id":0,
+    "AreaCode": "01",
+    "AreaName": "関東",
+    "PrefCode": "08",
+    "PrefName": "茨城県"
+ },
+ {
+ 	"id":1,
+    "AreaCode": "01",
+    "AreaName": "関東",
+    "PrefCode": "09",
+    "PrefName": "栃木県"
+ },
+ {
+ 	"id":2,
+    "AreaCode": "01",
+    "AreaName": "関東",
+    "PrefCode": "10",
+    "PrefName": "群馬県"
+ },
+ {
+ 	"id":3,
+    "AreaCode": "01",
+    "AreaName": "関東",
+    "PrefCode": "11",
+    "PrefName": "埼玉県"
+ },
+ {
+ 	"id":4,
+    "AreaCode": "01",
+    "AreaName": "関東",
+    "PrefCode": "12",
+    "PrefName": "千葉県"
+ },
+ {
+ 	"id":5,
+    "AreaCode": "01",
+    "AreaName": "関東",
+    "PrefCode": "13",
+    "PrefName": "東京都"
+ },
+ {
+ 	"id":6,
+    "AreaCode": "01",
+    "AreaName": "関東",
+    "PrefCode": "14",
+    "PrefName": "神奈川県"
+ },
+ {
+ 	"id":7,
+    "AreaCode": "01",
+    "AreaName": "関東",
+    "PrefCode": "14",
+    "PrefName": "神奈川県"
+ },
+ {
+ 	"id":8,
+    "AreaCode": "02",
+    "AreaName": "東海",
+    "PrefCode": "21",
+    "PrefName": "岐阜県"
+ },
+ {
+ 	"id":9,
+    "AreaCode": "02",
+    "AreaName": "東海",
+    "PrefCode": "22",
+    "PrefName": "静岡県"
+ },
+ {
+ 	"id":10,
+    "AreaCode": "02",
+    "AreaName": "東海",
+    "PrefCode": "23",
+    "PrefName": "愛知県"
+ },
+ {
+ 	"id":11,
+    "AreaCode": "02",
+    "AreaName": "東海",
+    "PrefCode": "24",
+    "PrefName": "三重県"
+ },
+ {
+ 	"id":12,
+    "AreaCode": "03",
+    "AreaName": "関西",
+    "PrefCode": "25",
+    "PrefName": "滋賀県"
+ },
+ {
+ 	"id":13,
+    "AreaCode": "03",
+    "AreaName": "関西",
+    "PrefCode": "26",
+    "PrefName": "京都府"
+ },
+ {
+ 	"id":14,
+    "AreaCode": "03",
+    "AreaName": "関西",
+    "PrefCode": "27",
+    "PrefName": "大阪府"
+ },
+ {
+ 	"id":15,
+    "AreaCode": "03",
+    "AreaName": "関西",
+    "PrefCode": "28",
+    "PrefName": "兵庫県"
+ },
+ {
+ 	"id":16,
+    "AreaCode": "03",
+    "AreaName": "関西",
+    "PrefCode": "29",
+    "PrefName": "奈良県"
+ },
+ {
+ 	"id":17,
+    "AreaCode": "03",
+    "AreaName": "関西",
+    "PrefCode": "30",
+    "PrefName": "和歌山県"
+ },
+ {
+ 	"id":17,
+    "AreaCode": "",
+    "AreaName": "",
+    "PrefCode": "",
+    "PrefName": "選択しない"
+ }
+]

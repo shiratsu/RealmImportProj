@@ -8,23 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		AF0B1E481A9C1EB500BEFEA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B1E471A9C1EB500BEFEA2 /* main.m */; };
+		AF0B1E4F1A9C1F0300BEFEA2 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0B1E4E1A9C1F0300BEFEA2 /* Realm.framework */; };
+		AF0B1E511A9C1F0D00BEFEA2 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0B1E501A9C1F0D00BEFEA2 /* libc++.dylib */; };
+		AF0B1E541A9C1F8500BEFEA2 /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B1E531A9C1F8500BEFEA2 /* Area.m */; };
+		AF0B1E581A9C20A400BEFEA2 /* StartDay.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B1E571A9C20A400BEFEA2 /* StartDay.m */; };
+		AF0B1E5D1A9C255100BEFEA2 /* MinimumDay.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B1E5C1A9C255100BEFEA2 /* MinimumDay.m */; };
+		AF0B1E601A9C277800BEFEA2 /* OptionTag.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B1E5F1A9C277800BEFEA2 /* OptionTag.m */; };
+		AF0B1E631A9C28D300BEFEA2 /* MainJob.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0B1E621A9C28D300BEFEA2 /* MainJob.m */; };
+		AF0B1E6A1A9DE84F00BEFEA2 /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF0B1E4E1A9C1F0300BEFEA2 /* Realm.framework */; };
+		AF0B1E6B1A9DE85300BEFEA2 /* libc++.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF0B1E501A9C1F0D00BEFEA2 /* libc++.dylib */; };
+		AF0B1E6C1A9DE85B00BEFEA2 /* MainJob.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF0B1E641A9D6E8900BEFEA2 /* MainJob.json */; };
+		AF0B1E6D1A9DE86000BEFEA2 /* StartDay.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF0B1E661A9D6E8900BEFEA2 /* StartDay.json */; };
+		AF0B1E6E1A9DE86500BEFEA2 /* area.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF0B1E671A9D6E8900BEFEA2 /* area.json */; };
+		AF0B1E6F1A9DE88900BEFEA2 /* MinimumDay.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF0B1E651A9D6E8900BEFEA2 /* MinimumDay.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AF0B1E421A9C1EB500BEFEA2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				AF0B1E6F1A9DE88900BEFEA2 /* MinimumDay.json in CopyFiles */,
+				AF0B1E6E1A9DE86500BEFEA2 /* area.json in CopyFiles */,
+				AF0B1E6D1A9DE86000BEFEA2 /* StartDay.json in CopyFiles */,
+				AF0B1E6C1A9DE85B00BEFEA2 /* MainJob.json in CopyFiles */,
+				AF0B1E6B1A9DE85300BEFEA2 /* libc++.dylib in CopyFiles */,
+				AF0B1E6A1A9DE84F00BEFEA2 /* Realm.framework in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AF0B1E441A9C1EB500BEFEA2 /* RealmForShotAlert2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RealmForShotAlert2; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0B1E471A9C1EB500BEFEA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF0B1E4E1A9C1F0300BEFEA2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = RealmForShotAlert2/Realm.framework; sourceTree = "<group>"; };
+		AF0B1E501A9C1F0D00BEFEA2 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		AF0B1E521A9C1F7C00BEFEA2 /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
+		AF0B1E531A9C1F8500BEFEA2 /* Area.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area.m; sourceTree = "<group>"; };
+		AF0B1E561A9C205100BEFEA2 /* StartDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartDay.h; sourceTree = "<group>"; };
+		AF0B1E571A9C20A400BEFEA2 /* StartDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartDay.m; sourceTree = "<group>"; };
+		AF0B1E5B1A9C250D00BEFEA2 /* MinimumDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinimumDay.h; sourceTree = "<group>"; };
+		AF0B1E5C1A9C255100BEFEA2 /* MinimumDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinimumDay.m; sourceTree = "<group>"; };
+		AF0B1E5E1A9C274900BEFEA2 /* OptionTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionTag.h; sourceTree = "<group>"; };
+		AF0B1E5F1A9C277800BEFEA2 /* OptionTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionTag.m; sourceTree = "<group>"; };
+		AF0B1E611A9C289C00BEFEA2 /* MainJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainJob.h; sourceTree = "<group>"; };
+		AF0B1E621A9C28D300BEFEA2 /* MainJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainJob.m; sourceTree = "<group>"; };
+		AF0B1E641A9D6E8900BEFEA2 /* MainJob.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainJob.json; sourceTree = "<group>"; };
+		AF0B1E651A9D6E8900BEFEA2 /* MinimumDay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MinimumDay.json; sourceTree = "<group>"; };
+		AF0B1E661A9D6E8900BEFEA2 /* StartDay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StartDay.json; sourceTree = "<group>"; };
+		AF0B1E671A9D6E8900BEFEA2 /* area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = area.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0B1E511A9C1F0D00BEFEA2 /* libc++.dylib in Frameworks */,
+				AF0B1E4F1A9C1F0300BEFEA2 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +78,7 @@
 		AF0B1E3B1A9C1EB500BEFEA2 = {
 			isa = PBXGroup;
 			children = (
+				AF0B1E691A9DE7BD00BEFEA2 /* Framework */,
 				AF0B1E461A9C1EB500BEFEA2 /* RealmForShotAlert2 */,
 				AF0B1E451A9C1EB500BEFEA2 /* Products */,
 			);
@@ -57,9 +95,40 @@
 		AF0B1E461A9C1EB500BEFEA2 /* RealmForShotAlert2 */ = {
 			isa = PBXGroup;
 			children = (
+				AF0B1E681A9DE7B000BEFEA2 /* New Group */,
+				AF0B1E641A9D6E8900BEFEA2 /* MainJob.json */,
+				AF0B1E651A9D6E8900BEFEA2 /* MinimumDay.json */,
+				AF0B1E661A9D6E8900BEFEA2 /* StartDay.json */,
+				AF0B1E671A9D6E8900BEFEA2 /* area.json */,
+				AF0B1E571A9C20A400BEFEA2 /* StartDay.m */,
+				AF0B1E521A9C1F7C00BEFEA2 /* Area.h */,
+				AF0B1E531A9C1F8500BEFEA2 /* Area.m */,
 				AF0B1E471A9C1EB500BEFEA2 /* main.m */,
+				AF0B1E561A9C205100BEFEA2 /* StartDay.h */,
+				AF0B1E5B1A9C250D00BEFEA2 /* MinimumDay.h */,
+				AF0B1E5C1A9C255100BEFEA2 /* MinimumDay.m */,
+				AF0B1E5E1A9C274900BEFEA2 /* OptionTag.h */,
+				AF0B1E5F1A9C277800BEFEA2 /* OptionTag.m */,
+				AF0B1E611A9C289C00BEFEA2 /* MainJob.h */,
+				AF0B1E621A9C28D300BEFEA2 /* MainJob.m */,
 			);
 			path = RealmForShotAlert2;
+			sourceTree = "<group>";
+		};
+		AF0B1E681A9DE7B000BEFEA2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		AF0B1E691A9DE7BD00BEFEA2 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				AF0B1E501A9C1F0D00BEFEA2 /* libc++.dylib */,
+				AF0B1E4E1A9C1F0300BEFEA2 /* Realm.framework */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0B1E581A9C20A400BEFEA2 /* StartDay.m in Sources */,
+				AF0B1E5D1A9C255100BEFEA2 /* MinimumDay.m in Sources */,
+				AF0B1E541A9C1F8500BEFEA2 /* Area.m in Sources */,
 				AF0B1E481A9C1EB500BEFEA2 /* main.m in Sources */,
+				AF0B1E631A9C28D300BEFEA2 /* MainJob.m in Sources */,
+				AF0B1E601A9C277800BEFEA2 /* OptionTag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +276,10 @@
 		AF0B1E4C1A9C1EB500BEFEA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RealmForShotAlert2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +287,10 @@
 		AF0B1E4D1A9C1EB500BEFEA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RealmForShotAlert2",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
