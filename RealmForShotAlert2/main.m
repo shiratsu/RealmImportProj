@@ -12,6 +12,7 @@
 #import "StartDay.h"
 #import "MinimumDay.h"
 #import "MainJob.h"
+#import "OptionTag.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -21,7 +22,7 @@ int main(int argc, const char * argv[]) {
         RLMRealm *realm = [RLMRealm defaultRealm];
         [realm beginWriteTransaction];
         
-        NSArray *aryDef = [NSArray arrayWithObjects:@"StartDay", @"MinimumDay", @"MainJob", nil];
+        NSArray *aryDef = [NSArray arrayWithObjects:@"StartDay", @"MinimumDay", @"MainJob" ,@"OptionTag", nil];
         
         // Import JSON
         NSString *jsonFilePath = [[NSBundle mainBundle] pathForResource:@"area" ofType:@"json"];
@@ -54,11 +55,15 @@ int main(int argc, const char * argv[]) {
         for (int i=0; i<aryDef.count; i++) {
             
             NSString *className = aryDef[i];
+            NSLog(@"%@",className);
             
             // Import JSON
             NSString *jsonFilePath = [[NSBundle mainBundle] pathForResource:className ofType:@"json"];
             NSData *jsonData = [NSData dataWithContentsOfFile:jsonFilePath];
             NSError *error = nil;
+            
+            NSLog(@"%@",jsonFilePath);
+            
             NSArray *aryDicts = [NSJSONSerialization JSONObjectWithData:jsonData
                                                                  options:0
                                                                    error:&error];
@@ -102,6 +107,17 @@ int main(int argc, const char * argv[]) {
                     
                     i++;
                     [realm addObject:instance];
+                }else if(className == @"OptionTag"){
+                    
+                    OptionTag *instance = [[OptionTag alloc] init];
+                    //NSLog(@"%@", instance);
+                    
+                    instance.id = i;
+                    instance.Code = aryDict[@"Code"];
+                    instance.Name = aryDict[@"Name"];
+                    
+                    i++;
+                    [realm addObject:instance];
                 }
                 
                 
@@ -129,10 +145,13 @@ int main(int argc, const char * argv[]) {
         for (Area *area in [Area allObjects]) {
             NSLog(@"person persisted to realm: %@", area);
         }
+        for (OptionTag *area in [OptionTag allObjects]) {
+            NSLog(@"person persisted to realm: %@", area);
+        }
         
         NSError *error2 = nil;
         
-        BOOL result = [realm writeCopyToPath:@"/Users/shiratsu/default.realm" error:&error2];
+        BOOL result = [realm writeCopyToPath:@"/Users/shhirats/Documents/shotalert.realm" error:&error2];
         NSLog(@"%@", error2);
         NSLog(@"%d", result);
         
